@@ -30,6 +30,14 @@ COMMIT;		#不写，也可以insert语句也可以插入成功
 # REPEATABLE READ	NO		NO			YES		NO
 # SERIALIZABLE		NO		NO			NO		YES
 
+# 事务日志
+
+-- MySQL提供了两种事务引擎 ：InnoDB 和 NDB Cluster.
+# 自动提交(AUTOCOMMIT)
+
+
+
+
 
 
 SELECT * FROM xiaochi;
