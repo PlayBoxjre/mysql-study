@@ -17,7 +17,6 @@ CREATE TABLE class (
 	cid INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '班级编号',
 	caption VARCHAR(16) NOT NULL UNIQUE COMMENT '班级名称'
 )ENGINE=INNODB AUTO_INCREMENT=0 CHARSET=utf8;
-INSERT INTO class(caption) VALUES('三年二班'),('一年二班'),('三年一班');
 #创建学生表
 CREATE TABLE student (
 	sid INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '学生编号',
@@ -44,4 +43,13 @@ CREATE TABLE score (
 	number INT UNSIGNED NOT NULL COMMENT '成绩分数'
 )ENGINE=INNODB AUTO_INCREMENT=0 CHARSET=utf8;
 
+INSERT INTO class(caption) VALUES('三年二班'),('一年二班'),('三年一班');	# insert data to class
+INSERT INTO student(sname,gender,class_id) VALUES('一号学生','男',1),('二号学生','女',1),('三号学生','未知',2);
+insert into teacher(tname) values('大波波老师'),('小岛岛老师'),('小苍苍老师');
+insert into course (cname,teach_id) values('生物',1),('体育',2),('物理',3);
+insert into score(student_id,course_id,number)values(1,1,98),(2,3,88),(3,2,10);
+insert into score(student_id,course_id,number) value(1,2,80);
+INSERT INTO score(student_id,course_id,number) VALUE(2,1,80);
+INSERT INTO score(student_id,course_id,number) VALUE(3,3,78);
+INSERT INTO score(student_id,course_id,number) VALUE(3,1,99);
 
