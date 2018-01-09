@@ -26,7 +26,7 @@
 
 - 4. 以管理员的身份打开命令行
 
-     >  ![cmd](images\mysql-install\cmd.gif)
+     >  ![cmd](images/mysql-install/cmd.gif)
 
 - 5. 将Mysql设置成环境变量。如果不设置的话，cmd 需要进入到MySql安装目录的`bin`目录
 
@@ -51,7 +51,7 @@
 
      3. 默认情况下会创建一个 `root`账号 ，密码在 MySQL安装目录下`data`目录下的`主机名.err`文件中
 
-        ![cmd](images\mysql-install\root_secret_location.png)
+        ![cmd](images/mysql-install/root_secret_location.png)
 
      4. 修改`root`密码和设置权限
 
